@@ -1,0 +1,256 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #8a2846;
+  background-color: #ffe0e9;
+}
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: #b9375e;
+}
+a {
+  text-decoration: none;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://betty.salonify.co.uk/user-uploads/service/114/bb94b365854a89d531b6584c3f4ea267.jpg') no-repeat center center / cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.hero-text {
+  background-color: rgba(82, 46, 56, 0.6); /* deep wine overlay */
+  padding: 40px;
+  border-radius: 12px;
+}
+.logo {
+  max-width: 140px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff7aa2;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.cta:hover {
+  background: #e05780;
+}
+
+/* Services Section */
+.services {
+  background-color: #ffc2d4;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ff9ebb;
+}
+.card h3 {
+  margin-top: 10px;
+  color: #602437;
+}
+
+
+
+/* Blog Section */
+.blog {
+  background-color: #ffe0e9;
+  color: #602437;
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.blog {
+  background-color: #ffe0e9;
+  padding: 60px 20px;
+  color: #602437;
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.blog-post {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+.blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+.blog-content h4 {
+  color: #b9375e;
+  margin-bottom: 10px;
+}
+.blog-content p {
+  font-size: 0.95em;
+  margin-bottom: 12px;
+}
+.blog-content .excerpt {
+  color: #522e38;
+}
+
+.blog-content i {
+  color: #8a2846;
+  margin-right: 5px;
+}
+
+
+/* Testimonials */
+.testimonial {
+  background: #ffe0e9;
+}
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+.testimonials div {
+  max-width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #e05780;
+}
+.testimonials strong {
+  display: block;
+  margin-top: 10px;
+  color: #602437;
+}
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+.brands img {
+  height: 40px;
+  object-fit: contain;
+}
+.tagline {
+  font-style: italic;
+  color: #8a2846;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  .hero-text {
+    padding: 20px;
+  }
+}
+/* Contact Section */
+.contact {
+  background-color: #ffc2d4;
+  padding: 60px 20px;
+  text-align: center;
+  color: #602437;
+}
+
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b9375e;
+  margin-bottom: 10px;
+}
+
+.contact .tagline {
+  font-style: italic;
+  color: #8a2846;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: #8a2846;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ffc2d4;
+  border-radius: 8px;
+  background: #fff0f5;
+  font-size: 1em;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff7aa2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e05780;
+}
+
